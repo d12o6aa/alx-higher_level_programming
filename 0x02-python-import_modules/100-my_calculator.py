@@ -16,4 +16,3 @@ if __name__ == "__main__":
     fcts = {'+': add, '-': sub, '*': mul, '/': div}
     print("{:s} {:s} {:s} = {:d}".format(av[1], av[2], av[3],
                                          fcts[av[2]](int(av[1]), int(av[3]))))
-
