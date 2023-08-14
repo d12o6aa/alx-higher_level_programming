@@ -8,4 +8,3 @@ if __name__ == "__main__":
     for name in names:
         if "__" not in name[:2]:
             print("{:s}".format(name))
-
