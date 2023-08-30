@@ -13,8 +13,8 @@ class Square:
         """Creates new instances of square.
 
         Args:
-            __size (int): size of the square (1 side).
-            __position (tuple): position of the square.
+            size (int): size of the square (1 side).
+            position (tuple): position of the square.
         """
         self.size = size
         self.position = position
