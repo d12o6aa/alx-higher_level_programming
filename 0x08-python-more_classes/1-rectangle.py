@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a class Rectangle"""
 
+
 class Rectangle:
     """
         Class that defines properties of rectangle by: (based on 0-rectangle.py).
@@ -28,6 +29,7 @@ class Rectangle:
             int: the width of the rectangle.
         """
         return self.__width
+
     @width.setter
     def width(self, value):
         """Property setter for width of rectangle.
@@ -39,7 +41,7 @@ class Rectangle:
             TypeError: if width is not an integer.
             ValueError: if width is less than 0.
         """
-        if not isinstance(value,int):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >= 0")
@@ -48,7 +50,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """height retriver.
+        """Height retriver.
 
         Returns:
             int: the height of the rectangle.
