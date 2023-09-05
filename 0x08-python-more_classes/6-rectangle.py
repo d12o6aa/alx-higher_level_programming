@@ -4,12 +4,14 @@
 
 class Rectangle:
     """
-    Class that defines properties of rectangle by: (based on 0-rectangle.py).
+    Class that defines properties of rectangle by: (based on 5-rectangle.py).
 
     Attributes:
         width (int): width of the rectangle.
         height (int): height of the rectangle.
     """
+
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Creates new instances of Rectangle.
@@ -20,6 +22,7 @@ class Rectangle:
         """
         self.height = height
         self.width = width
+        type(self).number_of_instances += 1
 
     @property
     def width(self):
@@ -29,6 +32,15 @@ class Rectangle:
             int: the width of the rectangle.
         """
         return self.__width
+
+    @property
+    def height(self):
+        """Height retriver.
+
+        Returns:
+            int: the height of the rectangle.
+        """
+        return self.__height
 
     @width.setter
     def width(self, value):
@@ -47,15 +59,6 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         else:
             self.__width = value
-
-    @property
-    def height(self):
-        """Height retriver.
-
-        Returns:
-            int: the height of the rectangle.
-        """
-        return self.__height
 
     @height.setter
     def height(self, value):
@@ -92,7 +95,7 @@ class Rectangle:
         if self.__height == 0 or self.width == 0:
             return 0
         else:
-            return (self.__height + self.__width) * 2
+            return 2 * (self.__height + self.__width)
 
     def __str__(self):
         """Prints the rectangle with the character # .
