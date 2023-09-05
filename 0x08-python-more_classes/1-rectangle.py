@@ -55,7 +55,7 @@ class Rectangle:
         """
         return self.__height
 
-    height.setter
+    @height.setter
     def height(self, value):
         """Property setter for height of recyangle.
 
