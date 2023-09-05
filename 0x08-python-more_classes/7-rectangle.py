@@ -4,7 +4,7 @@
 
 class Rectangle:
     """
-    Class that defines properties of rectangle by: (based on 5-rectangle.py).
+    Class that defines properties of rectangle by: (based on 6-rectangle.py).
 
     Attributes:
         width (int): width of the rectangle.
@@ -12,6 +12,7 @@ class Rectangle:
     """
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """Creates new instances of Rectangle.
@@ -110,7 +111,7 @@ class Rectangle:
 
         for i in range(self.__height):
             for j in range(self.__width):
-                rectangle.append("#")
+                rectangle.append(str(self.print_symbol))
             rectangle.append("\n")
 
         # remove blank line
