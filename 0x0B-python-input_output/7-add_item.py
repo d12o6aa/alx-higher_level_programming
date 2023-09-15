@@ -4,6 +4,9 @@
 import os
 """7-add_item.py module"""
 
+"""6-load_from_json_file.py module"""
+"""5-save_to_json_file module"""
+
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
