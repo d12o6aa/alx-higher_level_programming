@@ -65,3 +65,6 @@ class Rectangle(Base):
             raise ValueError(f"{name} must be > 0")
         if (name == "y" or name == "x") and v < 0:
             raise ValueError(f"{name} must be >= 0")
+
+    def area(self):
+        return self.__width * self.__height
