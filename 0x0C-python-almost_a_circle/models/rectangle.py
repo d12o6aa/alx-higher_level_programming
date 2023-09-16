@@ -10,7 +10,7 @@ class Rectangle(Base):
     A representation of the Rectangle.
     """
     def __init__(self, width, height, x=0, y=0, id=None):
-        super().__init__(id=None)
+        super().__init__(id)
 
         self.width = width
         self.height = height
@@ -74,3 +74,7 @@ class Rectangle(Base):
         for x in range(self.__height):
             print("#" * self.__width, end="")
             print()
+
+    def __str__(self):
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y}" \
+               f" - {self.width}/{self.height}"
