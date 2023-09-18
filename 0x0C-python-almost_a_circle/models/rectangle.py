@@ -58,7 +58,7 @@ class Rectangle(Base):
         self.__y = v
 
     def validation(self, name, v):
-
+        """Method for validating the value."""
         if type(v) is not int:
             raise TypeError(f"{name} must be an integer")
         if v <= 0 and (name == "height" or name == "width"):
@@ -67,9 +67,11 @@ class Rectangle(Base):
             raise ValueError(f"{name} must be >= 0")
 
     def area(self):
+        '''Computes area of this rectangle.'''
         return self.__width * self.__height
 
     def display(self):
+        '''Prints string representation of this rectangle.'''
         x = 0
         for x in range(self.__y):
             print()
@@ -81,10 +83,12 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
+        '''Returns string info about this rectangle.'''
         return f"[Rectangle] ({self.id}) {self.x}/{self.y}" \
                f" - {self.width}/{self.height}"
 
     def __updata(self, id=None, width=None, height=None, x=None, y=None):
+        '''Internal method that updates instance attributes via */**args.'''
         if id is not None:
             self.id = id
         if width is not None:
@@ -97,7 +101,7 @@ class Rectangle(Base):
             self.y = y
 
     def update(self, *args, **kwargs):
-
+        '''Updates instance attributes via no-keyword & keyword args.'''
         if args:
             self.__updata(*args)
         elif kwargs:
