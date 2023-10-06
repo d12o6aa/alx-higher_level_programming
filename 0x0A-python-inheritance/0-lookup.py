@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-    """
-    Module with the method lookpu
-    """
+"""
+=============================
+Module with the method lookpu
+=============================
+"""
 
 
 def lookup(obj):
