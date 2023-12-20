@@ -10,7 +10,7 @@ if (x <= 2) {
   console.log('No argument');
 } else if (x >= 3) {
   argc.forEach((val, index) => {
-    if (index >= 2) {
+    if (index > 1 && index < 3) {
       console.log(`${val}`);
     }
   });
