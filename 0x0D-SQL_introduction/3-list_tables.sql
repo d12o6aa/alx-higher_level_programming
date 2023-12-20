@@ -1,2 +1,3 @@
 -- ists all the tables of a database in your MySQL server.
-SELECT * FROM sys.tables;
+USE `{{DATABASE_NAME}}`;
+SHOW TABLE;
