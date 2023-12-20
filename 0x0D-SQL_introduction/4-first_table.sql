@@ -2,5 +2,5 @@
 
 CREATE TABLE IF NOT EXISTS first_table(
     `id` INT,
-    `[name]` NVARCHAR(256)
+    `name` NVARCHAR(256)
 );
