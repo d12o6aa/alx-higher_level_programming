@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const argc = process.argv;
+const argc = process.argv[2];
 
 if (isNumber(argc))
 	console.log("My number: ", Math.trunc(argc));
